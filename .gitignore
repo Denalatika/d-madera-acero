@@ -3,4 +3,6 @@
 D_Madera_Acero_seleccion_web_COMPLETA/
 *.zip
 .vercel/
+scripts/
 server.js
+.vercel
