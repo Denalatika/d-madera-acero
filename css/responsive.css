@@ -1,0 +1,352 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN SYSTEM — D' MADERA & ACERO
+   Precise Layouts for 390px, 768px, 1024px, 1440px, 1920px
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   TABLET & COMPACT SCREENS (<= 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .hero-stage {
+    height: 480px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .editorial-header-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .editorial-pillars {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .specialty-block,
+  .specialty-block.reverse {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .specialty-block.reverse .specialty-visual {
+    order: 1;
+  }
+
+  .specialty-block.reverse .specialty-info {
+    order: 2;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .portfolio-grid {
+    column-count: 2;
+    column-gap: 1.25rem;
+  }
+
+  .gallery-card {
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   TABLET PORTRAIT & MOBILE (<= 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  :root {
+    --gutter: 1.25rem;
+    --space-4xl: 4.5rem;
+    --space-5xl: 5.5rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .header-cta-btn {
+    display: none;
+  }
+
+  /* Bespoke Mobile Hero — Architectural Centered Poise */
+  .hero-section {
+    padding-top: 6.5rem;
+    padding-bottom: 3.5rem;
+    min-height: auto;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3.25rem;
+  }
+
+  .hero-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  .hero-meta-strip {
+    justify-content: center;
+    gap: 0.65rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-coords {
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    opacity: 0.85;
+  }
+
+  .hero-heading {
+    text-align: center;
+    font-size: clamp(2rem, 8.5vw, 2.9rem);
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+    margin-bottom: 1.25rem;
+    max-width: 20ch;
+  }
+
+  .hero-heading .hero-line {
+    display: block;
+    text-align: center;
+  }
+
+  .hero-lead {
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.72);
+    max-width: 460px;
+    margin: 0 auto 1.85rem auto;
+    text-wrap: pretty;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto 2.25rem auto;
+    gap: 0.75rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.85rem 1.5rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+  }
+
+  .hero-trust-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+
+  .trust-item {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .trust-label {
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.2rem;
+  }
+
+  .trust-value {
+    font-size: 0.78rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* Tailored Mobile Hero Stage */
+  .hero-stage {
+    height: 380px;
+    width: 100%;
+  }
+
+  .stage-card-primary {
+    width: 88%;
+    height: 320px;
+    right: 0;
+  }
+
+  .stage-card-secondary {
+    width: 72%;
+    height: 220px;
+    left: 0;
+  }
+
+  .stage-accent-box {
+    display: none;
+    /* remove clutter on mobile */
+  }
+
+  .portfolio-grid {
+    column-count: 2;
+    column-gap: 1rem;
+  }
+
+  .service-toggle-group {
+    grid-template-columns: 1fr;
+  }
+
+  .statement-stats-row {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .whatsapp-float-label {
+    display: none;
+  }
+
+  .whatsapp-float {
+    padding: 0.85rem;
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SMALL MOBILE VIEWPORT (<= 480px / 390px iPhone standard)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .hero-heading {
+    font-size: clamp(1.85rem, 8vw, 2.35rem);
+    line-height: 1.1;
+  }
+
+  .hero-trust-list {
+    gap: 0.5rem;
+    padding-top: 1.25rem;
+  }
+
+  .trust-label {
+    font-size: 0.58rem;
+  }
+
+  .trust-value {
+    font-size: 0.72rem;
+  }
+
+  .hero-stage {
+    height: 330px;
+  }
+
+  .stage-card-primary {
+    width: 92%;
+    height: 270px;
+  }
+
+  .stage-card-secondary {
+    width: 78%;
+    height: 190px;
+  }
+
+  .portfolio-grid {
+    column-count: 1;
+    column-gap: 0;
+  }
+
+  .gallery-card {
+    margin-bottom: 1rem;
+  }
+
+  .specialty-features {
+    grid-template-columns: 1fr;
+  }
+
+  .specialty-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .specialty-actions .btn {
+    width: 100%;
+  }
+
+  .filter-tabs {
+    gap: 0.45rem;
+  }
+
+  .filter-btn {
+    padding: 0.5rem 0.95rem;
+    font-size: 0.72rem;
+  }
+
+  .quote-form-card {
+    padding: 1.25rem;
+  }
+
+  .quote-preview-card {
+    padding: 1.25rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   ULTRA-WIDE MONITORS (>= 1920px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1920px) {
+  :root {
+    --container-max: 1540px;
+    --container-wide: 1760px;
+  }
+
+  .hero-heading {
+    font-size: 5.5rem;
+  }
+
+  .hero-stage {
+    height: 680px;
+  }
+
+  .stage-card-primary {
+    height: 540px;
+  }
+
+  .stage-card-secondary {
+    height: 380px;
+  }
+}

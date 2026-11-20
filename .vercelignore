@@ -1,0 +1,8 @@
+.DS_Store
+._*
+D_Madera_Acero_seleccion_web_COMPLETA/
+*.zip
+server.js
+README.md
+.git/
+.gitignore
